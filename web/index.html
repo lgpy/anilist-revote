@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Anilist RE:Vote</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="/eel.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image"><img id="Image"></div>
+        <div class="description">
+            <h1 id="Title" style="margin-top:0"></h1>
+
+            <div class="tag">Mean score:</div>
+            <div id="MeanScore"></div>
+
+            <div class="tag">Your score:</div>
+            <div class="tag" class="slidercontainer">
+                <input type="range" min="1" max="10" class="slider" id="slider">
+            </div>
+            <div class="tag" id="slider-value"></div>
+        </div>
+        <div class="buttons">
+            <div class="l-buttons">
+                <button class="tag btn move" type="submit" id="btn-previous" onclick="previous()">
+                    <i class="material-icons">skip_previous</i>
+                </button>
+                <span class="tag" style="margin-top:7px;" id="Current">
+                </span>
+                <button class="btn move" style="float:right;" type="submit" onclick="next()">
+                    <i class="material-icons">skip_next</i>
+                </button>
+            </div>
+            <div class="r-buttons">
+                <button class="btn save" style="float:right;" class="right btn waves-effect waves-light green" type="submit" onclick="save()">
+                    <i class="material-icons">save</i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body></html>
